@@ -1,4 +1,10 @@
 /**
+ * RECURSOS
+ *    Cliente HTTP: Axios
+ */
+
+
+/**
  * Rota / Recurso
  */
 
@@ -29,3 +35,13 @@
      * Driver: SELECT * FROM users
      * Query Builder: table('users').select('*').where()
      */
+
+     /**
+      * COMPONENTE: Função que retorna HTML
+      * JSX: HTML integrado dentor do JS
+      */
+
+/**
+ * const [counter, setCounter] = useState(0);
+  //Array[valor, função de atualização do valor]
+ */
