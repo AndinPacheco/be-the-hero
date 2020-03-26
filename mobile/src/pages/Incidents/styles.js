@@ -33,7 +33,7 @@ export default StyleSheet.create({
 
     description: {
         fontSize: 16,
-        lineHeight: 14,
+        lineHeight: 15,
         color: '#737380'
     },
 

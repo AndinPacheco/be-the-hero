@@ -36,8 +36,10 @@ export default function Incidents(){
             params: {page}
         });
 
+        
+
         setIncidents([... incidents, ... response.data]);
-        setTotal(response.headers['X-total-count']);
+        setTotal(response.headers['x-total-count']);
         setPage(page + 1);
         setLoading(false);
     }
@@ -52,13 +54,14 @@ export default function Incidents(){
                 <Image source={logoImg}/>
                 <Text style={styles.headerText}>
                     Total de <Text style={styles.headetTextBold}>{total} casos</Text>
+                    
                 </Text>
             </View>
 
             <Text style={styles.title}>Bem-Vindo!</Text>
             <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia.</Text>
             <FlatList
-                data={[incidents]}
+                data={incidents}
                 style={styles.incidentList}
                 keyExtractor={incident => String(incident.id)}
                 showsVerticalScrollIndicator={false}
